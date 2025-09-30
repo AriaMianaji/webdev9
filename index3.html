@@ -21,12 +21,13 @@
         align-items: center;
       }
 
-      .pricing-container > * {
+      .pricing-plan {
         background-color: rgb(235, 229, 229);
         border-radius: 5px;
         padding: 20px;
         text-align:center;
         flex-basis: 300px;
+        flex-shrink: 0;
       }
 
       li{
@@ -55,9 +56,10 @@
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
-        body{ 
-          display: flex;
+        .pricing-container{ 
           flex-direction: column;
+          height: 100%;
+          max-width: 300px;
         }
       }
     </style>
